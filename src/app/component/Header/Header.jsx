@@ -57,25 +57,15 @@ const navItems = [
       }
     ]
   },
+  
   {
-    label: "Pages",
-    href: "/",
-    isDropdown: true,
-    dropdown: [
-      {
-        title: "Our Services",
-        links: [
-          { label: "Our Promises", href: "/services/web-development" },
-          { label: "Our Blog", href: "/services/ui-ux" },
-          { label: "FAQ", href: "/services/seo" },
-          { label: "About Us", href: "/services/ecommerce" },
-        ]
-      }
-    ]
+    label: "Subscriptions",
+    href: "/pages/subscriptions"
   },
+  
   {
     label: "Contact",
-    href: "/contact"
+    href: "/pages/contact"
   }
 ];
 
@@ -136,7 +126,7 @@ const Header = () => {
               </div>
             </div>
             <div className="col-md-3 text-end">
-              <Link href="/login" className="login-btn">Log In / Register</Link>
+              <Link href="/pages/login" className="login-btn">Log In / Register</Link>
             </div>
           </div>
           <div className='responsive-sidebar'>
