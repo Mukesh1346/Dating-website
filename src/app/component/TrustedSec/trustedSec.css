@@ -1,0 +1,8 @@
+.trustedSec .svgImg:hover{
+  transform:scale(1.08);
+  transition:transform 0.3s ease;
+}
+.trustedSec {
+    padding: 20px;
+    text-align: center;
+}
