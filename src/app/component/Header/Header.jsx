@@ -78,14 +78,14 @@ const Header = () => {
       <div className="container">
         <nav className="navbar">
           <div className="desktop row align-items-center w-100">
-            <div className="col-md-3">
+            <div className="col-md-2">
               <div className="nav-logo">
                 <Link href="/">
                   <Image src={logo} width={160} height={80} alt="Logo" />
                 </Link>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-7">
               <div className="nav-menu-header">
                 <ul className="nav-menu-ul">
                   {navItems.map((item, idx) => (
