@@ -34,20 +34,20 @@ const page = () => {
                                 <div className="preferenceElementSec">
                                 
                                     <Link href="" className='elementor-button'>
-                                     <button className='btn elements-button-wrapper'>
+                                     <button className='btn text-light elements-button-wrapper'>
                                           Mens
                                      </button>
                                     
                                     </Link>
                                     <Link href="" className='elementor-button'>
-                                     <button className='btn elements-button-wrapper'>
+                                     <button className='btn  text-light elements-button-wrapper'>
                                           Wemen
                                      </button>
                                     
                                     </Link>
                                  
                                     <Link href="" className='elementor-button'>
-                                     <button className='btn elements-button-wrapper'>
+                                     <button className='btn text-light elements-button-wrapper'>
                                           Others
                                      </button>
                                     

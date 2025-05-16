@@ -7,6 +7,9 @@ import CollectionUser from '@/app/component/CollectionUser/page'
 import Hero from './component/Hero/Hero'
 import SearchHereSec from './component/SearchHereSec/page'
 import MeetOn from './component/MeetOn/page'
+import TestimonialCarousel from './component/Testimonial/page'
+import VideoSection from './component/VideoSec/page'
+
 const page = () => {
   return (
     <>
@@ -16,6 +19,9 @@ const page = () => {
       <CollectionUser/>
       <SearchHereSec/>
       <MeetOn/>
+      <TestimonialCarousel/>
+      <VideoSection/>
+
     </>
   )
 }
