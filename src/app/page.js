@@ -9,7 +9,6 @@ import SearchHereSec from './component/SearchHereSec/page'
 import MeetOn from './component/MeetOn/page'
 import TestimonialCarousel from './component/Testimonial/page'
 import VideoSection from './component/VideoSec/page'
-
 const page = () => {
   return (
     <>
@@ -21,7 +20,6 @@ const page = () => {
       <MeetOn/>
       <TestimonialCarousel/>
       <VideoSection/>
-
     </>
   )
 }
