@@ -9,10 +9,12 @@ import SearchHereSec from './component/SearchHereSec/page'
 import MeetOn from './component/MeetOn/page'
 import TestimonialCarousel from './component/Testimonial/page'
 import VideoSection from './component/VideoSec/page'
+import CoupleForm from './component/CoupleForm/CoupleForm'
 const page = () => {
   return (
     <>
       <Hero />
+      <CoupleForm />
       <TrustedSec/>
       <DateAdviceSec/>
       <CollectionUser/>

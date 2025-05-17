@@ -45,6 +45,23 @@ const ContactPage = () => {
 
     return (
         <>
+         <section className='breadcrumb-all'>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12">
+                            <nav aria-label="breadcrumb">
+                                <ol className="breadcrumb justify-content-center m-0 gap-2">
+                                    <li className="breadcrumb-item"><a href="/">Home</a></li>
+                                    <i className="bi bi-heart"></i>
+                                    <li className="breadcrumb-item active" aria-current="page">Subscriptions</li>
+                                </ol>
+                            </nav>
+                            <h1 className='text-center'>COntact Us</h1>
+                            {/* <p className='text-center'>Choose the plan that suits you best</p> */}
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section className="contact-sec">
                 <div className="container">
                     <div className="row">

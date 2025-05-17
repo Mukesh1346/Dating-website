@@ -77,7 +77,7 @@
     width:100%;
 }
 .elementor-button{
-    background-color: #ED147D;
+    background-color: var(--bg);
     font-size: 16px;
     font-weight: 600;
     box-shadow: 0px 8px 11px 0px #F8CFE3;

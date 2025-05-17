@@ -6,6 +6,7 @@ import Image from 'next/image'
 const Hero = () => {
   return (
     <>
+    <section className="all-body">
       <div className="hero-section">
         <div className="container">
           <div className="hero-content">
@@ -46,6 +47,7 @@ const Hero = () => {
 
         </div>
       </div>
+    </section>
     </>
   )
 }

@@ -1,5 +1,9 @@
 .nav-main {
-    padding: 20px 0;
+    padding: 10px 0;
+    position: absolute;
+    background-color: #0000006a;
+    width: 100%;
+    z-index: 999;
 }
 
 .nav-logo img {
@@ -30,7 +34,7 @@
 }
 
 .nav-menu-header .nav-menu-ul li a:hover {
-    color: #f0c040;
+    color: var(--bg);
 }
 
 .nav-menu-header .dropdown {
