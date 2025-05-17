@@ -32,6 +32,7 @@ const images = [
   '/images/user3.jpeg',
   '/images/user4.jpeg',
   '/images/user5.jpeg',
+
 ];
 
 const ImageGallery = () => {
