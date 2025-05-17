@@ -23,6 +23,7 @@ const navItems = [
           { label: "Recent Groups", href: "/about" },
           { label: "Single Group", href: "/about" },
           { label: "Members", href: "/about" },
+          { label: "About Us", href: "/pages/about-us" },
         ]
       },
       {

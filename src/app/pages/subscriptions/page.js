@@ -72,6 +72,23 @@ const page = () => {
     ];
     return (
         <>
+            <section className='breadcrumb-all'>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12">
+                            <nav aria-label="breadcrumb">
+                                <ol className="breadcrumb justify-content-center m-0 gap-2">
+                                    <li className="breadcrumb-item"><a href="/">Home</a></li>
+                                    <i className="bi bi-heart"></i>
+                                    <li className="breadcrumb-item active" aria-current="page">Subscriptions</li>
+                                </ol>
+                            </nav>
+                            <h1 className='text-center'>Subscriptions</h1>
+                            <p className='text-center'>Choose the plan that suits you best</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section className='subscription-sec'>
                 <div className="container-fluid">
                     <div className="row justify-content-center g-4">
@@ -82,13 +99,13 @@ const page = () => {
                                         <h5 className="subs-card-title">{plan.title}</h5>
                                         <hr />
                                         <h3 className="price-text">
-                                            <span style={{color:'var(--bg)'}}><strong> ${plan.price}</strong></span>{" "}
-                                            <small style={{color:'var(--bg)'}}>/ month</small>
+                                            <span style={{ color: 'var(--bg)' }}><strong> ${plan.price}</strong></span>{" "}
+                                            <small style={{ color: 'var(--bg)' }}>/ month</small>
                                         </h3>
                                         <hr />
                                         <ul className="list-unstyled text-start mt-4 mb-4">
                                             {plan.features.map((feature, i) => (
-                                                <li key={i} className='sub-icons' style={{color:'var(--bg)'}}>
+                                                <li key={i} className='sub-icons' style={{ color: 'var(--bg)' }}>
                                                     <i className="bi bi-check-circle-fill me-2"></i>
                                                     {feature}
                                                 </li>

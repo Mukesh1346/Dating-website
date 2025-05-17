@@ -34,7 +34,7 @@
 }
 
 .meet-btn {
-    background-color: #ED147D;
+    background-color: var(--bg);
     color: white;
     padding: 8px 24px;
     border: none;

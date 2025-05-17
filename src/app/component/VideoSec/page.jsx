@@ -1,7 +1,7 @@
 'use client';
 import 'animate.css';
 import React from 'react';
-import './VideoSection.css'; // External CSS for custom styles
+import './VideoSection.css'; 
 import { motion } from 'framer-motion';
 
 const VideoSection = () => {
