@@ -59,3 +59,63 @@
     font-size: 16px;
     padding: 5px 0;
 }
+
+.titlesec{
+  text-align: center;
+  margin-bottom:30px;
+
+}
+
+.titlesec h1{ 
+   font-weight: 700 !important;
+  color:darkslategray;
+ 
+}
+
+.SubscriptionRightSec{
+  margin:30px;
+}
+.SubscriptionleftSec{
+display: flex;
+justify-content: center;
+}
+
+.SubscriptionRightSec p{
+  font-size: 15px;
+  line-height: 30px;
+  font-style: italic;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.sectionsubtitle{
+  font-size: 30px;
+  font-weight:700;
+  color:darkslategray;
+} 
+
+@media (max-width:768px){
+  .image1{
+    height:240px;
+  }
+  .sub-icons {
+    font-size: 12px;
+    padding: 3px 0;
+}
+.subs-card-title {
+  font-size: 20px;
+   text-align: center;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+

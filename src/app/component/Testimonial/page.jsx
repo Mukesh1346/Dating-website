@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import "./testimonial.css";
-import Svg1 from '@/app/Images/heartSvg1.png'
+import Svg1 from '@/app/Images/heartSvg.png'
 
 const testimonials = [
   {
@@ -21,7 +21,7 @@ const testimonials = [
     text: `Dont be afraid to give up the good to go for the great.`,
     name: "John D. Rockefeller",
     role: "Business Magnate",
-    image: "/banner10.png",
+    image: "/banner9.png",
   },
 ];
 

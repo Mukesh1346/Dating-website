@@ -1,5 +1,10 @@
 .nav-main {
-    padding: 20px 0;
+    padding: 10px 0;
+    position: absolute;
+    background-color: #0000006a;
+    width: 100%;
+    z-index: 999;
+    top:0;
 }
 
 .nav-logo img {
@@ -30,7 +35,7 @@
 }
 
 .nav-menu-header .nav-menu-ul li a:hover {
-    color: #f0c040;
+    color: var(--bg);
 }
 
 .nav-menu-header .dropdown {
@@ -90,6 +95,13 @@
 
 }
 
+.logotext{
+    font-family: var(--font-family);
+    color:white;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+}
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -212,4 +224,9 @@
     .sidebar-dropdown ul li {
         margin: 5px 0;
     }
+   
+.nav-main {
+    background: var(--bg) !important;
+  
+}
 }

@@ -30,8 +30,7 @@ const images = [
   '/images/user2.jpeg',
   '/images/user2.jpg',
   '/images/user3.jpeg',
-  '/images/user4.jpeg',
-  '/images/user5.jpeg',
+  
 
 ];
 

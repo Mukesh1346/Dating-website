@@ -44,6 +44,8 @@
 .DataTittle{
     font-weight: 600;
     font-size: 45px;
+    font-family: var(--font-family);
+    color: #A16EFF;
 }
 .element-container{
     font-weight: 400;
@@ -62,6 +64,11 @@
 .boldSec{
     box-sizing: border-box;
 }
+.DateTextSection .subtitle-section{
+    font-family: var(--font-family);
+    color:#A16EFF
+}
+
 
 .preferenceSec{
     margin-top:25px;
@@ -77,7 +84,7 @@
     width:100%;
 }
 .elementor-button{
-    background-color: #ED147D;
+    background-color: var(--bg);
     font-size: 16px;
     font-weight: 600;
     box-shadow: 0px 8px 11px 0px #F8CFE3;
@@ -88,4 +95,39 @@
     text-decoration: none;
     width:100%
 }
+@media (max-width: 768px){
+    .AdviceRightSec {
+       
+        padding: 20px 0px 30px 0px;
+    }
 
+    .element-container{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .elementor-button {
+     padding: 0px;
+    
+    }
+    
+.preferenceElementSec {
+    max-width: 300px;
+}
+.DataTittle {
+    font-weight: 700;
+    font-size: 38px;
+}
+.subtitle-section {
+   
+    font-size: 17px;
+}
+.dateAdviceImageSec {
+    height:255px;
+}
+
+.PlayiconSvg {
+    top: 31%;
+    left: 36%;
+}
+
+}

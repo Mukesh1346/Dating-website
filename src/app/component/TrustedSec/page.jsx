@@ -11,8 +11,8 @@ const page = () => {
     <>
       <section className='trusted-sec-main'>
         <div>
-          <div className="container-fluid">
-            <div className='text-center'>
+          <div className="container-fluid"> 
+            <div className='text-center trustedtitleSec'>
               <h1>The No.1 Trusted Dating</h1>
             </div>
             <div className="row align-items-center">
@@ -49,8 +49,10 @@ const page = () => {
         </div>
       </section>
 
+
+
     </>
   )
 }
 
-export default page
+export default page ;

@@ -18,7 +18,7 @@
     text-align: center;
     font-size: 17px;
     font-weight: 650;
-    color: #ED147D;
+    color: #6d3fc4;
     margin-bottom: 0;
   }
   
@@ -28,7 +28,7 @@
   }
   
   .UserImgWrapper:hover {
-    background-color: #ED147D;
+    background-color: #6d3fc4;
   }
   
   .social-icons {
@@ -50,6 +50,10 @@ font-size: 16px;
     opacity: 1;
   }
   
+  .icon{
+    color:white;
+
+  }
   .SearchMainSec {
     display: flex;
     flex-direction: column;
@@ -66,3 +70,26 @@ font-size: 16px;
     color: #888;
     margin-bottom: 10px;
   }
+
+
+@media (max-width : 768px){
+  .UserImgWrapper img{
+    width:150px;
+    height:150px;
+  }
+  .UserImgWrapper {
+    width: 150px;
+    height: 155px;
+}
+.user-discription p{
+ text-align: justify;
+}
+.Search-detailSec{
+  width:250px;  
+
+}
+
+.SearchMainSec {
+  padding: 0px;
+}
+}

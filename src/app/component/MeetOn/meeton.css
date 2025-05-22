@@ -21,6 +21,8 @@
 }
 
 .MeetOnTittle h2 {
+    font-family:var(--font-family);
+    color:  #A16EFF;
     font-size: 36px;
     margin-bottom: 20px;
     font-weight: bold;
@@ -34,7 +36,7 @@
 }
 
 .meet-btn {
-    background-color: #ED147D;
+    background-color: var(--bg);
     color: white;
     padding: 8px 24px;
     border: none;
@@ -46,5 +48,15 @@
 }
 
 .meet-btn:hover {
-    background-color: #e94e7a;
+    background-color:  #6d3fc4;;
 }
+
+@media (max-width: 768px){
+    .MeetOnDescription p {
+        font-size: 13px;
+        color: #f1f1f1;
+        margin-bottom: 10px;
+        line-height: 1.5;
+    }
+}
+

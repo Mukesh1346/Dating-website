@@ -1,12 +1,12 @@
 .testimonial-wrapper {
-  background: linear-gradient(to bottom, #ED147D, white);
+  background: linear-gradient(to bottom, #A16EFF, white);
     padding: 60px 30px;
     position: relative;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 500px;
+    height: 500px;
   }
   
   .testimonial-container {
@@ -31,7 +31,7 @@
   
   .testimonial-box {
     background-color: transparent;
-    border: 8px solid white;
+    /* border: 8px solid white; */
     padding: 40px 30px;
     color: white;
     font-size: 1.6rem;
