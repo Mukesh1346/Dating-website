@@ -18,7 +18,7 @@ const CoupleForm = () => {
     const handleToChange = (e) => {
         const value = Number(e.target.value);
         setAgeTo(value);
-    };
+    };           
 
     // Only update TO when slider moves
     const handleSliderChange = (e) => {
@@ -35,7 +35,7 @@ const CoupleForm = () => {
                                 <h1>Your true love starts here.</h1>
                                 <p>Join the dating site where you could meet anyone, anywhere!</p>
                                 <form>
-                                    <div className="mb-3">
+                                    <div className="mb-3 FormSelectSection   ">
                                         <label className="form-label d-block fw-bold">I am:</label>
                                         <div className="btn-group" role="group">
                                             <input type="radio" className="btn-check" name="iam" id="iam-man" autoComplete="off" defaultChecked />
@@ -49,7 +49,7 @@ const CoupleForm = () => {
                                         </div>
                                     </div>
 
-                                    <div className="mb-3">
+                                    <div className="mb-3 FormSelectSection   ">
                                         <label className="form-label d-block fw-bold">Interested In:</label>
                                         <div className="btn-group" role="group">
                                             <input type="radio" className="btn-check" name="interested" id="interested-man" autoComplete="off" />
@@ -63,9 +63,9 @@ const CoupleForm = () => {
                                         </div>
                                     </div>
 
-                                    <div className="mb-3">
+                                    <div className="mb-3 FormSelectSection   ">
                                         <label className="form-label fw-bold">Age</label>
-                                        <div className="d-flex gap-2 mb-2">
+                                        <div className="d-flex ageRange gap-2 mb-2">
                                             <div className="d-grid">
                                                 <label htmlFor="ageFrom">From</label>
                                                 <input
@@ -303,9 +303,11 @@ const CoupleForm = () => {
 
                                     </div>
 
-                                    <button type="submit" className="btn w-100" style={{ backgroundColor: "#A16EFF", color: "white" }}>
+                                   <div className='FindPartnerbtnSec'>
+                                   <button type="submit" className="btn FindPartnerbtn " style={{ backgroundColor: "#A16EFF", color: "white" }}>
                                         Find your partner
                                     </button>
+                                   </div>
                                 </form>
                             </div>
                         </div>

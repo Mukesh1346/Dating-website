@@ -2,7 +2,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
-import logo from "../../Images/logo-light.svg"
+// import logo from "../../Images/logo-light.svg"
+import logo from "../../Images/logo.png"
 import mermberImage from "../../Images/explore-lmage.png"
 import './header.css'
 
@@ -29,7 +30,7 @@ const navItems = [
       {
         title: "Profile",
         links: [
-          { label: "Single Member", href: "/about" },
+          { label: "Single Member", href: "/pages/faq" },
           { label: "Media Profile", href: "/about" },
           { label: "Activity Profile", href: "/about" },
           { label: "Info Profile", href: "/about" },
@@ -79,12 +80,15 @@ const Header = () => {
       <div className="container">
         <nav className="navbar">
           <div className="desktop row align-items-center w-100">
-            <div className="col-md-2">
-              <div className="nav-logo">
+            <div className="col-md-2 d-flex">
+              <div className="nav-logo ">
                 <Link href="/">
-                  <Image src={logo} width={160} height={80} alt="Logo" />
+                  <Image src={logo} width={160} height={100} alt="Logo" />
                 </Link>
               </div>
+              <div>
+                <h3 className='logotext'>Trustme</h3>
+                </div>
             </div>
             <div className="col-md-7">
               <div className="nav-menu-header">

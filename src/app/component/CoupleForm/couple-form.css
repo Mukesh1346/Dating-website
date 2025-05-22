@@ -100,3 +100,25 @@ input[type="range"].form-range {
     width: auto;
     height: 100vh;
 }
+
+.FindPartnerbtn {
+  width: 100% !important;
+}
+
+@media (max-width: 768px){
+  .couple-image {
+    height: 100%;
+}
+.ageRange{
+  justify-content: center;
+
+}
+.FindPartnerbtnSec{
+  text-align: center;
+}
+
+.FindPartnerbtn{
+  width: auto !important;
+}
+
+}

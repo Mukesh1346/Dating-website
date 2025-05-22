@@ -30,14 +30,14 @@ export default function SearchHereSec() {
                   <div className="UserImgWrapper">
                     <Image src={item.image} alt="UserImg" width={250} height={260} className="UserImg" />
                     <div className="social-icons">
-                      <FaFacebookF className="icon" />
-                      <FaInstagram className="icon" />
-                      <FaWhatsapp className="icon" />
-                      <FaPinterest className="icon" />
+                      <FaFacebookF className="icon "/>
+                      <FaInstagram className="icon"/>
+                      <FaWhatsapp className="icon"/>
+                      <FaPinterest className="icon"/>
                     </div>
                   </div>
                   <h3 className="searchUserName">{item.name}</h3>
-                  <div>
+                  <div className='Search-detailSec'>
                     <p className='designationSec'>{item.designation}</p>
                     <div className="user-discription">
                       <p>{item.details}</p>

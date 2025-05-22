@@ -1,5 +1,8 @@
 import React from 'react'
 import './footer.css'
+import image1 from '@/app/Images/user/user1.jpeg'
+import image2 from '@/app/Images/user/user2.jpeg'
+import image3 from '@/app/Images/user/user3.jpeg'
 
 // import image1 from '../../Images/user/people1.png'
 // import image2 from '../../Images/user/people2.png'
@@ -13,10 +16,10 @@ const Footer = () => {
         {/* Top Section */}
         <div className="row align-items-center newsletter-row">
           <div className="col-md-6">
-            <h6 className="footer-heading">Newsletter Sign Up</h6>
+            <h6 className="footer-heading">Newsletter Sign Up </h6>
             <form className="newsletter-form">
               <input type="email" className="form-control email-input" placeholder="Your email address" />
-              <button className="btn btn-danger">Subscribe</button>
+              <button className="btn buttontheme">Subscribe</button>
             </form>
           </div>
           <div className="col-md-6 text-md-end text-center mt-4 mt-md-0">
@@ -47,21 +50,21 @@ const Footer = () => {
           <div className="col-md-3 mb-4">
             <h6 className="footer-heading">Featured Members</h6>
             <div className="member">
-              <img src="/avatar1.jpg" alt="Samantha" className="member-img" />
+              <img src="/images/user1.jpeg" alt="Samantha" className="member-img" />
               <div>
                 <strong>Samantha Lee</strong><br />
                 <span className="text-success">Active</span>
               </div>
             </div>
             <div className="member">
-              <img src="/avatar2.jpg" alt="Peter" className="member-img" />
+              <img  src="/images/user2.jpeg" alt="Peter" className="member-img" />
               <div>
                 <strong>Peter McMillan</strong><br />
                 <span>2 Hours Ago</span>
               </div>
             </div>
             <div className="member">
-              <img src="/avatar3.jpg" alt="Tluagtea" className="member-img" />
+              <img  src="/images/user3.jpeg" alt="Tluagtea" className="member-img" />
               <div>
                 <strong>Tluagtea Tualzik</strong><br />
                 <span className="text-success">Active</span>
@@ -82,10 +85,10 @@ const Footer = () => {
           </div> 
 
           {/* Recent Activity */}
-          {/* <div className="col-md-3 mb-4">
+          <div className="col-md-3 mb-4">
             <h6 className="footer-heading">Recent Activity</h6>
-            {[image1, image2, image3].map(i => (
-              <div className="recent-activity" key={i}>
+            {[image1, image2, image3].map( (i,index) => (
+              <div className="recent-activity" key={index}>
                 <img src={`/activity${i}.jpg`} className="activity-img" alt="Activity" />
                 <div>
                   <strong>Where To Find A Good...</strong><br />
@@ -93,9 +96,7 @@ const Footer = () => {
                 </div>
               </div>
             ))}
-          </div> */}
-
-
+          </div>
         </div>
       </div>
     </footer>
@@ -103,4 +104,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default Footer ;

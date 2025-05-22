@@ -11,3 +11,45 @@
 .trusted-sec-main {
   padding: 40px 0;
 }
+.trustedtitleSec h1{
+  font-family: var(--font-family);
+  color: #A16EFF;
+  margin-bottom: 30px;
+}
+
+.trustedSec h3{
+  font-family: var(--font-family);
+  color: #ffffff;
+  /* margin-bottom: 30px; */
+}
+.trustedSec {
+  background: #c3a8f3;        /* semi-transparent glass layer */
+  backdrop-filter: blur(10px);                /* background blur */
+  -webkit-backdrop-filter: blur(10px);        /* for Safari */
+  border-radius: 16px;
+  padding: 20px;
+  color: #000000;                                 /* white text on blurred bg */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);   /* soft glassy shadow */
+  border: 1px solid rgba(255, 255, 255, 0.2);  /* glassy edge */
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+
+
+
+@media (max-width : 768px){
+  .trustedSec img{
+    width:80px;
+    height:80px;
+}
+.trustedSec {
+  margin: 0px 50px;
+  margin-bottom: 10px;
+}
+.couple-form-left p{
+  padding: 0 40px;
+}
+
+
+}

@@ -120,3 +120,33 @@ text-decoration: none !important;
   padding: 5px 20px;
   font-size: 20px;
 }
+
+
+
+
+
+.cube .face {
+  backface-visibility: hidden;
+}
+
+.cube .front {
+  transform: rotateY(0deg) translateZ(200px);
+}
+.cube .back {
+  transform: rotateY(180deg) translateZ(200px);
+}
+.cube .right {
+  transform: rotateY(90deg) translateZ(200px);
+}
+.cube .left {
+  transform: rotateY(-90deg) translateZ(200px);
+}
+.cube .top {
+  transform: rotateX(90deg) translateZ(200px);
+}
+.cube .bottom {
+  transform: rotateX(-90deg) translateZ(200px);
+}
+
+
+

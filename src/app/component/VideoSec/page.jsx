@@ -14,14 +14,14 @@ const VideoSection = () => {
         muted
         playsInline
       >
-        <source src="/video1.mp4" type="video/mp4" />
+        <source src="/couples2.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
       <div className="overlay" />
 
       <div className="content">
-        <h1 className='animate__animated animate__bounce'>
+        <h1 className=''>
           Find Love That Lasts
 
         </h1>

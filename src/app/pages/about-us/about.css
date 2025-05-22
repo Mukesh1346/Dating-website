@@ -1,3 +1,45 @@
 .about-us{
-    background-color: #F5F5F5;
+    background-color: var(--bg);
 }
+.AboutCount-Section{
+    padding: 100px;
+}
+
+.about-content-first h1 ,h4{
+    font-family: var(--font-family);
+    color:white;
+
+}
+.rightSideSec{
+  text-align: center;
+  padding:120px
+}
+
+.About-mainSec{
+    background-color: var(--bg);
+}
+
+.rightSideSec h2{
+    font-family: var(--font-family);
+    color: white;
+}
+
+.leftSideSec{
+    position: relative;
+}
+ .svgImg{
+ position: absolute;
+ top:78px;
+ left:30px;
+ }
+
+ .CloudsvgImg{
+    position: absolute;
+    top:53px;
+    left:5px; 
+ }
+ .MsgsvgImg{
+    position: absolute;
+    top: 188px;
+    right: 53px;
+ }
