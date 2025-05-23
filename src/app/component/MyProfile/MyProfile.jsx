@@ -62,7 +62,7 @@ const MyProfile = () => {
                                     {item.name} <span>{item.age}</span>{" "}
                                     <span>
                                         <i className="bi bi-patch-check text-success"></i>
-                                    </span>
+                                    </span>  
                                 </h4>
                                 <p className="profile-location">
                                     <i className="bi bi-geo-alt"></i> {item.country}, {item.state}

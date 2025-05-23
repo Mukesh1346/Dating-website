@@ -1,7 +1,7 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import pic1 from "@/app/Images/angellovebaby.png"
+import Notification from '@/app/component/Notification/page'
 import { 
   Bell, Heart, MessageCircle, MapPin, Star, 
   X, CheckCircle, Trash2, Eye, Gift, Clock
@@ -266,7 +266,7 @@ const NotificationItem = ({
   );
 };
 
-export default function NotificationsPage() {
+export default function NotificationsPage(){
   const router = useRouter();
   const [notifications, setNotifications] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -371,10 +371,7 @@ export default function NotificationsPage() {
   return (
     <div className="notifications-container">
       <div className="notifications-card">
-      <div className='AngleImgSec'>
-      <Image src={pic1} alt="Notificationimg" className='AngleImg' height={100} width={100}/>
 
-          </div>
         <div className="notifications-header">
          
           <div className="d-flex justify-content-between align-items-center">
@@ -485,3 +482,9 @@ export default function NotificationsPage() {
     </div>
   );
 }
+
+
+
+
+
+
