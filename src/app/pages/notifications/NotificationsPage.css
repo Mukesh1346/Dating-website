@@ -1,8 +1,7 @@
 /* Main Container */
 .notifications-container {
   min-height: 100vh;
-  background: linear-gradient(135deg, #f9f5ff 0%, #f0f4ff 100%);
-  padding-top: 6rem;
+  padding-top: 0rem;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -12,12 +11,11 @@
 /* Card Container */
 .notifications-card {
   background: white;
-  border-radius: 20px;
+  border-radius: 40px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
   width: 100%;
   max-width: 1250px;
   overflow: hidden;
-  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .AngleImgSec{
@@ -56,7 +54,7 @@
 .notification-tabs {
   display: flex;
   gap: 0.5rem;
-  margin-top: 1.5rem;
+  justify-content: center;
 }
 
 .notification-tab {
@@ -91,7 +89,7 @@
   display: flex;
   align-items: center;
   gap: 1.25rem;
-  padding: 1.25rem;
+  padding: 1rem;
   border-radius: 12px;
   margin-bottom: 0.75rem;
   transition: all 0.2s ease;
@@ -172,7 +170,7 @@
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.2s ease;
-  color: #999;
+  color: white;
 }
 
 .notification-action-btn:hover {
@@ -181,11 +179,11 @@
 }
 
 .notification-action-btn.primary {
-  color: #6e48aa;
+  color: white;
 }
 
 .notification-action-btn.primary:hover {
-  background: #f0e6ff;
+  background: var(--bg);
 }
 
 .unread-badge {

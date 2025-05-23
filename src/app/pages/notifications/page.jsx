@@ -1,9 +1,9 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import Notification from '@/app/component/Notification/page'
-import { 
-  Bell, Heart, MessageCircle, MapPin, Star, 
+import pic1 from "@/app/Images/angellovebaby.png"
+import {
+  Bell, Heart, MessageCircle, MapPin, Star,
   X, CheckCircle, Trash2, Eye, Gift, Clock
 } from 'lucide-react';
 import { useRouter } from 'next/navigation';
@@ -190,10 +190,10 @@ const generateMockNotifications = () => {
   ];
 };
 
-const NotificationItem = ({ 
-  notification, 
-  onMarkAsRead, 
-  onNavigate 
+const NotificationItem = ({
+  notification,
+  onMarkAsRead,
+  onNavigate
 }) => {
   const {
     id,
@@ -211,11 +211,11 @@ const NotificationItem = ({
     [NOTIFICATION_TYPES.MESSAGE]: <MessageCircle className="icon-message" size={20} />,
     [NOTIFICATION_TYPES.SUPERLIKE]: <Star className="icon-superlike" size={20} fill="currentColor" />,
     [NOTIFICATION_TYPES.LOCATION]: <MapPin className="icon-location" size={20} />,
-    [NOTIFICATION_TYPES.MATCH]: <Heart className="icon-match" size={20} fill="currentColor"/>,
+    [NOTIFICATION_TYPES.MATCH]: <Heart className="icon-match" size={20} fill="currentColor" />,
     [NOTIFICATION_TYPES.PROFILE_VIEW]: <Eye className="icon-view" size={20} />,
     [NOTIFICATION_TYPES.GIFT]: <Gift className="icon-gift" size={20} />
   };
-    
+
   const handleClick = () => {
     if (!isRead) {
       onMarkAsRead(id);
@@ -243,7 +243,7 @@ const NotificationItem = ({
           {iconMap[type] || <Bell className="text-secondary" size={20} />}
         </div>
       )}
-      
+
       <div className="notification-content">
         <p className="notification-message">{message}</p>
         <div className="notification-time">
@@ -251,10 +251,10 @@ const NotificationItem = ({
           {time}
         </div>
       </div>
-      
+
       <div className="notification-actions">
         {!isRead && <div className="unread-badge"></div>}
-        <button 
+        <button
           onClick={handleDismiss}
           className="notification-action-btn"
           aria-label="Dismiss notification"
@@ -296,7 +296,7 @@ export default function NotificationsPage(){
       const randomTypes = Object.values(NOTIFICATION_TYPES);
       const randomType = randomTypes[Math.floor(Math.random() * randomTypes.length)];
       const randomUser = generateMockNotifications()[0].metadata.userId;
-      
+
       const newNotification = {
         id: Math.floor(Math.random() * 10000),
         type: randomType,
@@ -307,7 +307,7 @@ export default function NotificationsPage(){
         isRead: false,
         metadata: { userId: randomUser }
       };
-      
+
       setNotifications(prev => [newNotification, ...prev]);
       setHasUnread(true);
     }, 30000); // Every 30 seconds
@@ -323,8 +323,8 @@ export default function NotificationsPage(){
 
   const handleMarkAsRead = async (id, dismiss = false) => {
     try {
-      setNotifications(prev => 
-        dismiss 
+      setNotifications(prev =>
+        dismiss
           ? prev.filter(n => n.id !== id)
           : prev.map(n => n.id === id ? { ...n, isRead: true } : n)
       );
@@ -353,13 +353,13 @@ export default function NotificationsPage(){
       [NOTIFICATION_TYPES.LOCATION]: '/discover?filter=nearby',
       [NOTIFICATION_TYPES.GIFT]: `/gifts/${metadata.giftId}`
     };
-    
+
     router.push(routes[type] || '/notifications');
   };
 
   const handleMarkAllAsRead = async () => {
     try {
-      setNotifications(prev => 
+      setNotifications(prev =>
         prev.map(n => ({ ...n, isRead: true }))
       );
       setHasUnread(false);
@@ -371,12 +371,11 @@ export default function NotificationsPage(){
   return (
     <div className="notifications-container">
       <div className="notifications-card">
-
         <div className="notifications-header">
-         
+
           <div className="d-flex justify-content-between align-items-center">
             <h1>
-              <Bell size={24}/>
+              <Bell size={24} />
               Notifications
               {hasUnread && (
                 <span className="notification-count-badge">
@@ -384,19 +383,44 @@ export default function NotificationsPage(){
                 </span>
               )}
             </h1>
-            
+            <div className="notification-tabs">
+              <button
+                className={`notification-tab ${activeTab === 'all' ? 'active' : ''}`}
+                onClick={() => setActiveTab('all')}
+              >
+                All
+              </button>
+              <button
+                className={`notification-tab ${activeTab === 'unread' ? 'active' : ''}`}
+                onClick={() => setActiveTab('unread')}
+              >
+                Unread
+              </button>
+              <button
+                className={`notification-tab ${activeTab === 'message' ? 'active' : ''}`}
+                onClick={() => setActiveTab('message')}
+              >
+                Messages
+              </button>
+              <button
+                className={`notification-tab ${activeTab === 'like' ? 'active' : ''}`}
+                onClick={() => setActiveTab('like')}
+              >
+                Likes
+              </button>
+            </div>
             <div className="notification-actions">
               {hasUnread && (
-                <button 
-                  onClick={handleMarkAllAsRead} 
+                <button
+                  onClick={handleMarkAllAsRead}
                   className="notification-action-btn primary"
                   title="Mark all as read"
                 >
                   <CheckCircle size={18} />
                 </button>
               )}
-              <button 
-                onClick={handleClearAll} 
+              <button
+                onClick={handleClearAll}
                 className="notification-action-btn"
                 disabled={notifications.length === 0}
                 title="Clear all notifications"
@@ -405,36 +429,11 @@ export default function NotificationsPage(){
               </button>
             </div>
           </div>
-          
-          <div className="notification-tabs">
-            <button 
-              className={`notification-tab ${activeTab === 'all' ? 'active' : ''}`}
-              onClick={() => setActiveTab('all')}
-            >
-              All
-            </button>
-            <button 
-              className={`notification-tab ${activeTab === 'unread' ? 'active' : ''}`}
-              onClick={() => setActiveTab('unread')}
-            >
-              Unread
-            </button>
-            <button 
-              className={`notification-tab ${activeTab === 'message' ? 'active' : ''}`}
-              onClick={() => setActiveTab('message')}
-            >
-              Messages
-            </button>
-            <button 
-              className={`notification-tab ${activeTab === 'like' ? 'active' : ''}`}
-              onClick={() => setActiveTab('like')}
-            >
-              Likes
-            </button>
-          </div>
-          
+
+
+
         </div>
-        
+
         {isLoading ? (
           <div className="text-center py-5">
             <div className="spinner-border text-primary" role="status" style={{ width: '3rem', height: '3rem' }}>
@@ -446,8 +445,8 @@ export default function NotificationsPage(){
           <div className="notifications-list">
             {filteredNotifications.length > 0 ? (
               filteredNotifications.map((note) => (
-                <NotificationItem 
-                  key={note.id} 
+                <NotificationItem
+                  key={note.id}
                   notification={note}
                   onMarkAsRead={handleMarkAsRead}
                   onNavigate={handleNavigate}
@@ -459,16 +458,16 @@ export default function NotificationsPage(){
                   <Bell size={36} />
                 </div>
                 <h3>
-                  {activeTab === 'unread' 
-                    ? "You're all caught up!" 
+                  {activeTab === 'unread'
+                    ? "You're all caught up!"
                     : "No notifications yet"}
                 </h3>
                 <p>
-                  {activeTab === 'unread' 
-                    ? "You've read all your notifications" 
+                  {activeTab === 'unread'
+                    ? "You've read all your notifications"
                     : "New notifications will appear here"}
                 </p>
-                <button 
+                <button
                   className="btn btn-primary"
                   onClick={() => router.push('/discover')}
                 >
