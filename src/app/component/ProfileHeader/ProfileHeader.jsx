@@ -31,7 +31,7 @@ const ProfileHeader = () => {
                                     <Image src={ProfileImage} alt='profile-image' />
                                 </div>
                                 <div>
-                                    <i className="bi bi-bell"></i>
+                                  <Link href={"/pages/notifications"}>  <i className="bi bi-bell"></i></Link>
                                 </div>
                                 <div>
                                     <i className="bi bi-heart"></i>

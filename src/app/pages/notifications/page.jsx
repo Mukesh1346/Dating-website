@@ -266,7 +266,7 @@ const NotificationItem = ({
   );
 };
 
-export default function NotificationsPage() {
+export default function NotificationsPage(){
   const router = useRouter();
   const [notifications, setNotifications] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -481,3 +481,9 @@ export default function NotificationsPage() {
     </div>
   );
 }
+
+
+
+
+
+
