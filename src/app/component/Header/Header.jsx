@@ -31,7 +31,7 @@ const navItems = [
         title: "Profile",
         links: [
           { label: "Single Member", href: "/pages/faq" },
-          { label: "Media Profile", href: "/about" },
+          { label: "Media Profile", href: "/pages/notifications" },
           { label: "Activity Profile", href: "/about" },
           { label: "Info Profile", href: "/about" },
         ]
