@@ -32,8 +32,6 @@ const navItems = [
         links: [
           { label: "Profile Main", href: "/pages/profile" },
           { label: "Media Profile", href: "/about" },
-          { label: "Activity Profile", href: "/about" },
-          { label: "Info Profile", href: "/about" },
         ]
       },
       {

@@ -98,17 +98,32 @@ justify-content: center;
   .image1{
     height:240px;
   }
-  .sub-icons {
-    font-size: 12px;
-    padding: 3px 0;
-}
+  .image2{
+    height:240px;
+  }
+  .image3{
+    height:240px;
+  }
+
 .subs-card-title {
   font-size: 20px;
    text-align: center;
 }
+
+.SubscriptionRightSec p {
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 5px;
 }
 
+.sectionsubtitle {
+    font-size: 20px;
+}
+.SubscriptionRightSec {
+  margin: 10px 33px;
+}
 
+}
 
 
 
