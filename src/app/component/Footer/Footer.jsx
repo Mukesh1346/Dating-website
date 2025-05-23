@@ -19,7 +19,7 @@ const Footer = () => {
             <h6 className="footer-heading">Newsletter Sign Up </h6>
             <form className="newsletter-form">
               <input type="email" className="form-control email-input" placeholder="Your email address" />
-              <button className="btn buttontheme">Subscribe</button>
+              <button className="upgradebtn">Subscribe</button>
             </form>
           </div>
           <div className="col-md-6 text-md-end text-center mt-4 mt-md-0">
