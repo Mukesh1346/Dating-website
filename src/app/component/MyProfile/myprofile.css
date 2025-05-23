@@ -18,7 +18,7 @@ object-fit: cover;
 }
 
 .myprofile-content{
-    padding: 1rem;
+    /* padding: 1rem; */
     max-width: 90%;
 }
 
