@@ -1,10 +1,13 @@
-.nav-main {
+.nav-main .container {
     padding: 10px 0;
-    position: absolute;
-    background-color: #0000006a;
+    position: fixed;
+    background-color: #00000093;
     width: 100%;
     z-index: 999;
-    top:0;
+    top: 10px;
+    left: 100px;
+    z-index: 9999;
+    border-radius: 40px;
 }
 
 .nav-logo img {
@@ -96,11 +99,12 @@
 }
 
 .logotext{
-    font-family: var(--font-family);
+    /* font-family: var(--font-family); */
     color:white;
     align-items: center;
     text-align: center;
     justify-items: center;
+    margin: 0;
 }
 @keyframes fadeIn {
     from {

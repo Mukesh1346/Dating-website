@@ -9,9 +9,6 @@
     /* margin-top: 5rem; */
 }
 
-.hero-text h1{
-    line-height: normal;
-}
 .hero-icons ul li a {
     color: white;
     font-size: 22px;
@@ -28,7 +25,7 @@
 }
 
 .hero-content .hero-text h1 {
-    font-family: var(--font-family);
+    /* font-family: var(--font-family); */
     margin: 0;
     font-size: 70px;
     margin: 0;

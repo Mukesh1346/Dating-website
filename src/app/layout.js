@@ -1,14 +1,17 @@
 'use client';
 import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import './globals.css';
 import Header from './component/Header/Header';
 import Footer from './component/Footer/Footer';
 import Loader from './component/Loader/Loader';
+import ProfileNavbar from './component/ProfileHeader/ProfileHeader'; // Import ProfileNavbar
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function RootLayout({ children }) {
   const [loader, setLoader] = useState(true);
-  const [isVerified, setIsVerified] = useState(null); // null, true, or false
+  const [isVerified, setIsVerified] = useState(null);
+  const pathname = usePathname();
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -21,35 +24,40 @@ export default function RootLayout({ children }) {
     setIsVerified(status);
   };
 
+  // Determine which header to show
+  const renderHeader = () => {
+    return pathname === '/' ? <Header /> : <ProfileNavbar />;
+  };
+
   return (
     <html lang="en">
       <head />
       <body>
-        {/* {loader ? (
+        {loader ? (
           <Loader />
         ) : isVerified === null ? (
           <div className="age-form">
-            <div className='age-form-overlay'>
-            <div className="age-form-main">
-              <h2>Age Verification</h2>
-              <p>You must be <span className='text-danger'>18 </span> years old to enter.</p>
-              <div className="mt-4">
-                <button className="btn-yes" onClick={() => handleVerification(true)}>
-                  Yes
-                </button>
-                <button className="btn-no" onClick={() => handleVerification(false)}>
-                  No
-                </button>
+            <div className="age-form-overlay">
+              <div className="age-form-main">
+                <h2>Age Verification</h2>
+                <p>You must be <span className="text-danger">18</span> years old to enter.</p>
+                <div className="mt-4">
+                  <button className="btn-yes" onClick={() => handleVerification(true)}>
+                    Yes
+                  </button>
+                  <button className="btn-no" onClick={() => handleVerification(false)}>
+                    No
+                  </button>
+                </div>
               </div>
-            </div>
             </div>
           </div>
         ) : isVerified === true ? (
-          <div> */}
-            <Header />
+          <div>
+            {renderHeader()}
             {children}
             <Footer />
-          {/* </div>
+          </div>
         ) : (
           <div className="d-flex justify-content-center align-items-center vh-100 bg-dark text-white">
             <div className="text-center">
@@ -57,7 +65,7 @@ export default function RootLayout({ children }) {
               <p>You must be 18 years or older to access this website.</p>
             </div>
           </div>
-        )} */}
+        )}
 
         <script
           src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
