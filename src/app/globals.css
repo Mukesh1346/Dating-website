@@ -121,10 +121,6 @@ text-decoration: none !important;
   font-size: 20px;
 }
 
-
-
-
-
 .cube .face {
   backface-visibility: hidden;
 }
@@ -150,3 +146,7 @@ text-decoration: none !important;
 
 
 
+.profile{
+    background-color: rgb(236 229 230);
+    padding: 2rem 1rem;
+}
