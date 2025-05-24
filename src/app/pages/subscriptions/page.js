@@ -3,7 +3,7 @@ import './subscriptions.css'
 import Image from 'next/image';
 import img1 from '@/app/Images/graph1.jpg'
 import img2 from '@/app/Images/Registration.avif'
-import img3 from '@/app/Images/time.jpg'
+import img3 from '@/app/Images/Time.jpg'
 
 const page = () => {
     const plans = [

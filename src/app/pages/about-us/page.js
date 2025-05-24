@@ -120,11 +120,6 @@ const Page = () => {
 
        </div>
       </section>
-
-
-
-
-
     </>
   );
 };

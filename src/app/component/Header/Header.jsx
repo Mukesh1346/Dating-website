@@ -13,6 +13,10 @@ const navItems = [
     href: "/",
   },
   {
+    label: "Find Match",
+    href: "/pages/find-match",
+  },
+  {
     label: "Community",
     href: "/about",
     isDropdown: true,
@@ -88,7 +92,7 @@ const Header = () => {
                 <h3 className='logotext'>Trustme</h3>
                 </div>
             </div>
-            <div className="col-md-7">
+            <div className="col-md-8">
               <div className="nav-menu-header">
                 <ul className="nav-menu-ul">
                   {navItems.map((item, idx) => (
@@ -128,7 +132,7 @@ const Header = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-md-3 text-end">
+            <div className="col-md-2 text-end">
               <Link href="/pages/login" className="login-btn">Log In / Register</Link>
             </div>
           </div>
