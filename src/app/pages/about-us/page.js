@@ -39,14 +39,14 @@ const Page = () => {
       </section>
 
       <section className='about-us py-5'>
-        <div className='container-fluid'>
+        <div className='container'>
           <div className='row align-items-center'>
             <div className='col-md-6'>
               <div className='AboutCount-Section'>
               <div className='about-content-first'>
                 <h4>Our Values</h4>
                 <h1>Relationships are at Core of Everything we do.</h1>
-                <p>
+                <p >
                   Wafer shortbread sesame snaps pudding fruitcake ice cream croissant sweet.
                   Cookie soufflé carrot cake marzipan cake shortbread halvah. Liquorice jelly pastry
                   carrot cake halvah sweet soufflé. Tootsie roll chocolate tart marzipan danish donut
@@ -57,19 +57,19 @@ const Page = () => {
               {/* Scroll Triggered Counter */}
               <div className='react-count-up mt-4 d-flex gap-5' ref={ref}>
                 <div>
-                  <h2 className='text-warning fw-bold'>
+                  <h2 className='CounterNumber fw-bold'>
                     {inView && <CountUp end={55000} duration={2} separator=',' />}
                   </h2>
                   <p className='fw-medium'>Daily Matches</p>
                 </div>
                 <div>
-                  <h2 className='text-warning fw-bold'>
+                  <h2 className='CounterNumber fw-bold'>
                     {inView && <CountUp end={100000} duration={2} separator=',' />}
                   </h2>
                   <p className='fw-medium'>Regular Visitors</p>
                 </div>
                 <div>
-                  <h2 className='text-warning fw-bold'>
+                  <h2 className='CounterNumber fw-bold'>
                     {inView && <CountUp end={435} duration={2} separator=',' />}
                   </h2>
                   <p className='fw-medium'>Register Devices</p>
@@ -80,7 +80,7 @@ const Page = () => {
 
             <div className='col-md-6'>
               <div>
-                <Image src={aboutImage} alt="about-image" className="w-100 h-auto" />
+                <Image src={aboutImage} alt="about-image" width={520} height={450} className="" />
               </div>
             </div>
           </div>

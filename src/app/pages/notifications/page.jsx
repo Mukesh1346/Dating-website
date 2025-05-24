@@ -427,11 +427,8 @@ export default function NotificationsPage(){
               >
                 <Trash2 size={18} />
               </button>
-            </div>
+            </div> 
           </div>
-
-
-
         </div>
 
         {isLoading ? (
@@ -451,7 +448,7 @@ export default function NotificationsPage(){
                   onMarkAsRead={handleMarkAsRead}
                   onNavigate={handleNavigate}
                 />
-              ))
+              ))      
             ) : (
               <div className="empty-state">
                 <div className="empty-state-icon">

@@ -1,0 +1,42 @@
+.stats-section {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to the next line on smaller screens */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    gap: 20px; /* Add spacing between cards */
+    /* background: url('/Banner12.jpg') center/cover no-repeat; */
+    /* background-size:cover; */
+    padding: 60px 20px;
+  }
+  
+  .stat-card {
+    flex: 0 1 220px; /* Each card will have a min-width but can shrink */
+    text-align: center;
+    color: white;
+     background: gray;
+    /* background-color: var(--bg);  */
+
+    padding: 0px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .stat-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .icon {
+    font-size: 50px;
+    color: #4caf50;
+    margin-bottom: 10px;
+  }
+  
+  .number {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .label {
+    font-size: 16px;
+  }
+  

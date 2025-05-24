@@ -12,13 +12,13 @@
   padding: 40px 0;
 }
 .trustedtitleSec h1{
-  font-family: var(--font-family);
-  color: #A16EFF;
+  /* font-family: var(--font-family); */
+  /* color: #A16EFF; */
   margin-bottom: 30px;
 }
 
 .trustedSec h3{
-  font-family: var(--font-family);
+  /* font-family: var(--font-family); */
   color: #ffffff;
   /* margin-bottom: 30px; */
 }
