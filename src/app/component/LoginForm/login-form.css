@@ -3,7 +3,7 @@ padding: 30px;
 }
 
 .login-bg {
-    background-color: rgb(236 229 230);
+    background-color: var(--bg2);
 }
 
 .login-card {
