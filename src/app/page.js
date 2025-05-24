@@ -10,7 +10,8 @@ import MeetOn from './component/MeetOn/page'
 import TestimonialCarousel from './component/Testimonial/page'
 import VideoSection from './component/VideoSec/page'
 import CoupleForm from './component/CoupleForm/CoupleForm'
-
+import Highlights from './component/Highlights/page'
+import PlatformBenifits from '@/app/component/PlatformBenifits/page'
 
 import AnimatedSection from './component/AnimatedSection/page'
 import CubeMainSec from './component/CubeMainSec/page'
@@ -24,36 +25,49 @@ const page = () => {
       <AnimatedSection>
       <CoupleForm />
       </AnimatedSection>
+      <AnimatedSection>
+
       <TrustedSec/>
+      </AnimatedSection>
 
       <AnimatedSection>   
       <DateAdviceSec/>
       </AnimatedSection>
  
-      <CollectionUser/>
+      {/* <CollectionUser/> */}
 
       <AnimatedSection>
       <SearchHereSec/>
       </AnimatedSection>
-      
+  
       <AnimatedSection>
-      <MeetOn/>
-      </AnimatedSection>
-       
-       <AnimatedSection>     
+          <Highlights/>
+        </AnimatedSection>
+
+
+      
+
+        
+    <PlatformBenifits/>
+
+
+    <AnimatedSection>     
          <TestimonialCarousel/>
        </AnimatedSection>
 
-      <AnimatedSection>
+      {/* <AnimatedSection>
       <VideoSection/>
       </AnimatedSection>
-         <CubeMainSec/>
+         <CubeMainSec/> */}
        {/* <CubeSection/> */}
    
        
 
 
-
+    
+       <AnimatedSection>
+      <MeetOn/>
+      </AnimatedSection>
 
 
 

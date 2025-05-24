@@ -44,8 +44,8 @@
 .DataTittle{
     font-weight: 600;
     font-size: 45px;
-    font-family: var(--font-family);
-    color: #A16EFF;
+    /* font-family: var(--font-family); */
+    /* color: #A16EFF; */
 }
 .element-container{
     font-weight: 400;
@@ -65,7 +65,7 @@
     box-sizing: border-box;
 }
 .DateTextSection .subtitle-section{
-    font-family: var(--font-family);
+    /* font-family: var(--font-family); */
     color:#A16EFF
 }
 

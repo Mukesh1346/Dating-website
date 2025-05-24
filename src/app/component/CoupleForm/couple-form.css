@@ -8,11 +8,11 @@
     padding: 20px 0;
 }
 .couple-form-left h1{
-    font-size: 40px;
+    font-size: 35px;
     line-height: 60px;
     letter-spacing: -1.7px;
-    font-family: var(--font-family);
-    color: var(--bg);
+    /* font-family: var(--font-family); */
+    /* color: var(--bg); */
     text-transform: capitalize;
     max-width: 70%;
 }
